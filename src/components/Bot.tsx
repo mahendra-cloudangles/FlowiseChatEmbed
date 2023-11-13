@@ -521,7 +521,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
               </span>
             </Show>
             <div style={{ flex: 1 }}></div>
-            <DeleteButton
+            {/* <DeleteButton
               sendButtonColor={props.bubbleTextColor}
               type="button"
               isDisabled={messages().length === 1}
@@ -531,7 +531,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
               <span style={{ "font-family": "Poppins, sans-serif" }}>
                 Clear
               </span>
-            </DeleteButton>
+            </DeleteButton> */}
           </div>
           <TextInput
             backgroundColor={props.textInput?.backgroundColor}
