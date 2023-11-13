@@ -493,7 +493,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
               )}
             </For>
           </div>
-          <div
+          {/* <div
             style={{
               display: "flex",
               "flex-direction": "row",
@@ -521,18 +521,20 @@ export const Bot = (props: BotProps & { class?: string }) => {
               </span>
             </Show>
             <div style={{ flex: 1 }}></div>
-            {/* <DeleteButton
-              sendButtonColor={props.bubbleTextColor}
-              type="button"
-              isDisabled={messages().length === 1}
-              class="my-2 ml-2"
-              on:click={clearChat}
-            >
-              <span style={{ "font-family": "Poppins, sans-serif" }}>
-                Clear
-              </span>
-            </DeleteButton> */}
-          </div>
+            {
+              <DeleteButton
+                sendButtonColor={props.bubbleTextColor}
+                type="button"
+                isDisabled={messages().length === 1}
+                class="my-2 ml-2"
+                on:click={clearChat}
+              >
+                <span style={{ "font-family": "Poppins, sans-serif" }}>
+                  Clear
+                </span>
+              </DeleteButton>
+            }
+          </div> */}
           <TextInput
             backgroundColor={props.textInput?.backgroundColor}
             textColor={props.textInput?.textColor}
