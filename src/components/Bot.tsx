@@ -435,7 +435,9 @@ export const Bot = (props: BotProps & { class?: string }) => {
                   {message.type === "userMessage" && (
                     <GuestBubble
                       message={message.message}
-                      backgroundColor={props.userMessage?.backgroundColor}
+                      backgroundColor={
+                        /* props.userMessage?.backgroundColor */ "#0D1322"
+                      }
                       textColor={props.userMessage?.textColor}
                       showAvatar={props.userMessage?.showAvatar}
                       avatarSrc={props.userMessage?.avatarSrc}
