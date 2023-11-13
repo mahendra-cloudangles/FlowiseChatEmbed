@@ -166,10 +166,10 @@ export const Bot = (props: BotProps & { class?: string }) => {
    * Add each chat message into localStorage
    */
   const addChatMessage = (allMessage: MessageType[]) => {
-    localStorage.setItem(
-      `${props.chatflowid}_EXTERNAL`,
-      JSON.stringify({ chatId: chatId(), chatHistory: allMessage })
-    );
+    // localStorage.setItem(
+    //   `${props.chatflowid}_EXTERNAL`,
+    //   JSON.stringify({ chatId: chatId(), chatHistory: allMessage })
+    // );
   };
 
   const updateLastMessage = (text: string) => {
@@ -326,7 +326,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
   });
 
   // eslint-disable-next-line solid/reactivity
-  createEffect(async () => {
+  /* createEffect(async () => {
     const chatMessage = localStorage.getItem(`${props.chatflowid}_EXTERNAL`);
     if (chatMessage) {
       const objChatMessage = JSON.parse(chatMessage);
@@ -387,7 +387,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
       }
     };
   });
-
+ */
   const isValidURL = (url: string): URL | undefined => {
     try {
       return new URL(url);
