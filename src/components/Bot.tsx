@@ -501,12 +501,15 @@ export const Bot = (props: BotProps & { class?: string }) => {
               height: "50px",
               position: props.isFullPage ? "fixed" : "absolute",
               top: 0,
-              left: 0,
+              // left: 0,
+              "margin-left": "25%",
+              "margin-right": "25%",
               width: "100%",
               background: /* props.bubbleBackgroundColor */ "#212B46",
               color: props.bubbleTextColor,
-              "border-top-left-radius": props.isFullPage ? "0px" : "6px",
-              "border-top-right-radius": props.isFullPage ? "0px" : "6px",
+              "text-align": "center",
+              "border-top-left-radius": props.isFullPage ? "10px" : "10px",
+              "border-top-right-radius": props.isFullPage ? "10px" : "10px",
             }}
           >
             <Show when={props.titleAvatarSrc}>
