@@ -446,7 +446,9 @@ export const Bot = (props: BotProps & { class?: string }) => {
                   {message.type === "apiMessage" && (
                     <BotBubble
                       message={message.message}
-                      backgroundColor={props.botMessage?.backgroundColor}
+                      backgroundColor={
+                        /* props.botMessage?.backgroundColor */ "#212B46"
+                      }
                       textColor={props.botMessage?.textColor}
                       showAvatar={props.botMessage?.showAvatar}
                       avatarSrc={props.botMessage?.avatarSrc}
