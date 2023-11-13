@@ -493,7 +493,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
               )}
             </For>
           </div>
-          {/* <div
+          <div
             style={{
               display: "flex",
               "flex-direction": "row",
@@ -503,7 +503,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
               top: 0,
               left: 0,
               width: "100%",
-              background: props.bubbleBackgroundColor,
+              background: /* props.bubbleBackgroundColor */ "#212B46",
               color: props.bubbleTextColor,
               "border-top-left-radius": props.isFullPage ? "0px" : "6px",
               "border-top-right-radius": props.isFullPage ? "0px" : "6px",
@@ -521,8 +521,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
               </span>
             </Show>
             <div style={{ flex: 1 }}></div>
-            {
-              <DeleteButton
+            {/* <DeleteButton
                 sendButtonColor={props.bubbleTextColor}
                 type="button"
                 isDisabled={messages().length === 1}
@@ -532,9 +531,8 @@ export const Bot = (props: BotProps & { class?: string }) => {
                 <span style={{ "font-family": "Poppins, sans-serif" }}>
                   Clear
                 </span>
-              </DeleteButton>
-            }
-          </div> */}
+              </DeleteButton> */}
+          </div>
           <TextInput
             backgroundColor={props.textInput?.backgroundColor}
             textColor={props.textInput?.textColor}
