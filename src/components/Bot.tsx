@@ -501,7 +501,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
               height: "50px",
               position: props.isFullPage ? "fixed" : "absolute",
               top: 0,
-              // left: 0,
+              left: 0,
               "margin-left": "25%",
               "margin-right": "25%",
               width: "100%",
