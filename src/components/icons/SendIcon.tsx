@@ -4,7 +4,7 @@ export const SendIcon = (props: JSX.SvgSVGAttributes<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    width="30px"
+    width="40px"
     style={{ fill: /* props.color ?? defaultButtonColor */ "#6A6E79" }}
     {...props}
   >
