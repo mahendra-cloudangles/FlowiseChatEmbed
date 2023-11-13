@@ -53,10 +53,12 @@ export const TextInput = (props: Props) => {
         // "border-top": "1px solid #eeeeee",
         "border-radius": "6px",
         position: "absolute",
+        color: "#ffffff",
         left: "40px",
         right: "40px",
         bottom: "40px",
         margin: "auto",
+        "font-size": "14px",
         "z-index": 1000,
         "background-color":
           /* props.backgroundColor ?? defaultBackgroundColor,

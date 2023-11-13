@@ -1,10 +1,10 @@
 import { JSX } from "solid-js/jsx-runtime";
-const defaultButtonColor = /* "#3B81F6" */ "#6A6E79";
+const defaultButtonColor = "#3B81F6";
 export const SendIcon = (props: JSX.SvgSVGAttributes<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    width="40px"
+    width="30px"
     style={{ fill: /* props.color ?? defaultButtonColor */ "#6A6E79" }}
     {...props}
   >
