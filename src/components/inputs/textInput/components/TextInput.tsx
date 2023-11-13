@@ -70,7 +70,9 @@ export const TextInput = (props: Props) => {
         value={inputValue()}
         fontSize={props.fontSize}
         disabled={props.disabled}
-        placeholder={props.placeholder ?? "Type your question"}
+        placeholder={
+          props.placeholder ?? /* "Type your question" */ "Enter your query..."
+        }
       />
       <SendButton
         sendButtonColor={props.sendButtonColor}
