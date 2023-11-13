@@ -5,7 +5,7 @@ export const LoadingBubble = () => (
     <span
       class="px-4 py-4 ml-2 whitespace-pre-wrap max-w-full chatbot-host-bubble"
       data-testid="host-bubble"
-      style={{ "background-color": "#0D1322" }}
+      style={{ "background-color": "#161D2F" }}
     >
       <TypingBubble />
     </span>
